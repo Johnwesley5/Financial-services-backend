@@ -1,0 +1,16 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: compliance-service
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/account_management
+    username: root
+    password: Wesley@949
+    driver-class-name: com.mysql.cj.jdbc.Driver

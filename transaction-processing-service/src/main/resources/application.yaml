@@ -1,0 +1,16 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: transaction-processing-service
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/transaction_processing
+    username: root
+    password: Wesley@949
+    driver-class-name: com.mysql.cj.jdbc.Driver

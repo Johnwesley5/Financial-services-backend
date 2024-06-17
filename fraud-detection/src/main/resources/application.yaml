@@ -1,0 +1,16 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: fraud-detection-service
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/fraud_detection
+    username: root
+    password: Wesley@949
+    driver-class-name: com.mysql.cj.jdbc.Driver
